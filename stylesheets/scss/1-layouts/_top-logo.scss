@@ -1,0 +1,20 @@
+// Wrapper and logo
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.first{
+    text-align: center;
+    margin-top: -2.5rem;
+    margin-bottom: 2rem;
+
+}
+.border {
+    border: 1px solid $dark;
+    background: $primary;
+    border-radius: 10px;
+    box-shadow: $shadow;
+}

@@ -1,0 +1,19 @@
+/* Reviews */
+
+.reviews{
+    display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(2, 1fr);
+     background: $primary;
+     max-width: 100%;
+     box-shadow: $shadow;
+     text-align: center;
+     padding: 2rem;
+}
+
+.box-a {
+    background: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: $shadow;
+}

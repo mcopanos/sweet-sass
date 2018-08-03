@@ -1,0 +1,29 @@
+.main-nav {
+    ul {
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(5, 1fr);  
+    }
+
+    a {
+    background: $primary;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: $dark;
+    text-transform: uppercase;
+    font-size: $base-size - 0.5;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    border: 1px solid $dark;
+    }
+
+    a:hover {
+        background-color: $dark;
+        color: $light;
+    }
+}
+

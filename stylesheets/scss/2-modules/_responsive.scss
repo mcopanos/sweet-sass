@@ -1,0 +1,50 @@
+/* Media Qureies */
+
+@media(max-width: 560px){
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+     }
+     input, textarea {
+         width: 100%;
+     }
+     .gallery img {
+         width: 100%;
+         
+     }
+}
+@media(max-width: 775px) {
+    .info {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .side-box {
+        flex-direction: column;
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .main-nav ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .gallery img {
+        margin-top: 1rem;
+    }
+    
+}
+
+@media(min-width: 1000px) {
+    .main-nav {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}

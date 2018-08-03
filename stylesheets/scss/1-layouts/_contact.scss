@@ -1,0 +1,43 @@
+/* Contact Section */
+
+.contact {
+    display: grid;
+    grid-gap: 20px;
+    background: $primary;
+    max-width: 100%;
+    box-shadow: $shadow;
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-default {
+    margin-top: 1rem;
+    margin-bottom: auto;
+    text-transform: uppercase;
+    box-shadow: $shadow;
+    border: 1px solid $dark;
+    background: White;
+    height: 2.5rem;
+}
+
+ label {
+   display: grid;
+   padding: .5rem 0;
+
+}
+
+input, textarea {
+    width: 55%;
+    border-radius: 10px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1rem;
+    color: var(--dark);
+    box-shadow: var(--shadow);
+}
+
+input {
+    height: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--dark);
+} 
+

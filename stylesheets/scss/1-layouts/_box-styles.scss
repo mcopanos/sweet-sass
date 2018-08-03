@@ -1,0 +1,67 @@
+/* Top Container */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+
+}
+
+/* Info Section */
+
+.info {
+    display: grid;
+    grid-gap: 20px;
+
+}
+
+/* Sidebox */
+
+.side-box {
+    grid-area: side-box;
+    text-align: center;
+    background: $primary;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: $shadow;
+    width: 100%;
+    display: grid;
+}
+
+/* Boxes */
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    background: $primary;
+    text-align: center;
+    margin-right: 5px;  
+    padding-right: 5px; 
+    box-shadow: $shadow;
+    line-height: 1.6rem;
+    margin: none; 
+    display: grid; 
+    /* added to fix gap */
+   
+}
+
+// Check here 
+.fix {
+    padding: -10px;
+}
+.sweets {
+   background: $primary;
+   box-shadow: $shadow;
+//    display: grid;
+   grid-gap: 30px; 
+   /* grid-template-columns: repeat(4, 1fr); */
+   text-align: center;
+   padding: 1px;
+}
+
+.outside {
+  padding-bottom: 49%;
+  padding-right: 15px;
+}
