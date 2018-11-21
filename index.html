@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets/scss/app.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="stylesheets/scss/app.css"> -->
     <title>Document</title>
 </head>
 <body>
@@ -18,9 +19,11 @@
       <!-- Top Container -->
       <header class="head">
         <nav class="main-nav">
-          <div class="border">
-            <h1> Z's Sweets </h1>
-            <h2 class="first">Baker | Designer | Perfectionist</h2>
+          <div class="border container">
+            <h1 class="title"> Z's Sweets <br>
+                <span>we love to help you celebrate!</span>
+            </h1>
+            <!-- <h2 class="first">Baker | Designer | Perfectionist</h2> -->
           </div>
           <br>
           <ul>
@@ -44,7 +47,7 @@
       </header>
 
       <!-- Slideshow container-->
-      <div class="slideshow-container">
+      <div class="slideshow-container slide">
 
         <!-- Full -width images with number and caption text -->
         <div class="mySlides fade">
@@ -64,26 +67,26 @@
             <img class="img-slide"src="images/wedding-4.jpg" style="width: 750px"alt="birthday cake">
             <div class="text"></div>
         </div>
-      </div>
-      <!-- Info Section -->
-      <a name="section1"></a>
-      <h1>About Us</h1>
-        <section class="info">
-            <div class="side-box">
-                <h2 >Locally Owned in the Ozarks!</h2>
-                <p>It's not an event without a <em><strong>SWEET!</strong></em> We bake all our cakes
-                to order so they are never frozen. Our frostings are made from scratch, whether you choose 
-                traditional <em><strong>Buttercream</strong></em> or <em><strong>Italian Meringue,</strong></em> 
-                it's sure be scrumptious.<br> We personialize your sweets with your concept and our attention to detail,
-                while making sure a lot of love is mixed into it.</p>
-                <p>We can deliver and setup your cake too!! That way, you can focus on the party</p>
-            </div>
-        </section>
+    </div>
+    <!-- Info Section -->
+    <a name="section1"></a>
+    <section class="info">
+        <h1>About Us<hr></h1> 
+        <div class="about container">
+            <h2 >Locally Owned in the Ozarks!</h2>
+            <p>It's not an event without a <em><strong>SWEET!</strong></em> We bake all our cakes
+            to order so they are never frozen. Our frostings are made from scratch, whether you choose 
+            traditional <em><strong>Buttercream</strong></em> or <em><strong>Italian Meringue,</strong></em> 
+            it's sure be scrumptious.<br> We personialize your sweets with your concept and our attention to detail,
+            while making sure a lot of love is mixed into it.</p>
+            <p>We can deliver and setup your cake too!! That way, you can focus on the party</p>
+        </div>
+    </section>
 
-      <!-- What we offer section -->
+      <!-- Sweets -->
       <a name="section2"></a>
-      <h1>Sweets</h1>
         <section class="boxes">
+            <h1 class="padding">Sweets<hr></h1>
             <div class="box">
                 <h1>Outside</h1>
                 <!-- <p>(Cakes & Cupcakes)</p> -->
@@ -102,7 +105,7 @@
                 </ul> 
                 </div>
             </div>
-            <div class="box">
+            <div class="box-inside">
                 <h1>Inside</h1>
                 <!-- <p>(Cups & Cupcakes)</p> -->
                 <ul>
@@ -143,15 +146,17 @@
             <br>
         </section>
         <section class="sweets">
-            <h1>Extra Sweets</h1>
-            <h3>Decorated Sugar Cookies, Custom Flavor Cookies</h3>
-            <p><strong>Pies:</strong> Apple, Cherry, Pecan, Pumpkin, Chocolate </p> 
+            <div class="container">
+                <h1>Extra Sweets<hr></h1>
+                <h3>Decorated Sugar Cookies, Custom Flavor Cookies</h3>
+                <p><strong>Pies:</strong> Apple, Cherry, Pecan, Pumpkin, Chocolate </p> 
+            </div>
         </section>
 
       <!-- Gallery Section -->
       <a name="section3"></a>
-      <h1>Gallery</h1>
         <section class="gallery">
+            <h1>Gallery</h1><hr>
             <img src="https://source.unsplash.com/random/200x200" alt="">
             <img src="https://source.unsplash.com/random/200x201" alt="">
             <img src="https://source.unsplash.com/random/200x202" alt="">
@@ -168,84 +173,89 @@
 
     <!-- Reviews Section -->
     <a name="section4"></a>
-    <h1>Client Raves</h1>
     <section class="reviews">
-        <div class="box-a">
-            <h3>"Best Tasting Cake"</h3>
-            <p>"...everyone at the bridal shower loved it, we got 
-                cinnamon swril and it was the best tasting cake that I 
-                have ever ordered..."
-                - Camille S.
-            </p>
-        </div>
-        <div class="box-a">
-            <h3>"Huge Hit"</h3>
-            <p>"...it turned out exactly as I asked and was a huge hit at my wedding...
-                - Brittany G."</p>
-        </div>
-        <div class="box-a">
-            <h3>"Homemade"</h3>
-            <p>"...it was all amazing and good homemade... - Vanessa C."</p>
-        </div>
-        <div class="box-a">
-            <h3>Five Stars</h3>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <p>- Nancy C.</p>
-        </div>
-        <div class="box-a">
-            <h3>"Everyone Loved"</h3>
-            <p>"...everyone loved the cake! It came out just like I asked it to be... 
-                - Carolyn S."</p>
-        </div>
-        <div class="box-a">
-            <h3>"Beautiful Job"</h3>
-            <p>"...Cindy does a beautiful job on her cakes and cupcakes...
-                - Connie H."</p>
+        <h1>Client Raves</h1><hr>
+        <div class="container">
+            <div class="box-a">
+                <h3>"Best Tasting Cake"</h3>
+                <p>"...everyone at the bridal shower loved it, we got 
+                    cinnamon swril and it was the best tasting cake that I 
+                    have ever ordered..."
+                    - Camille S.
+                </p>
+            </div>
+            <div class="box-a">
+                <h3>"Huge Hit"</h3>
+                <p>"...it turned out exactly as I asked and was a huge hit at my wedding...
+                    - Brittany G."</p>
+            </div>
+            <div class="box-a">
+                <h3>"Homemade"</h3>
+                <p>"...it was all amazing and good homemade... - Vanessa C."</p>
+            </div>
+            <div class="box-a">
+                <h3>Five Stars</h3>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <p>- Nancy C.</p>
+            </div>
+            <div class="box-a">
+                <h3>"Everyone Loved"</h3>
+                <p>"...everyone loved the cake! It came out just like I asked it to be... 
+                    - Carolyn S."</p>
+            </div>
+            <div class="box-a">
+                <h3>"Beautiful Job"</h3>
+                <p>"...Cindy does a beautiful job on her cakes and cupcakes...
+                    - Connie H."</p>
+            </div>
         </div>
     </section>
        
      <!-- Contact Section -->
      <a name="section5"></a>
-     <h1>Contact Me</h1>
         <section class="contact">
-         <form action="" method="post" id="contact-form">
-             <div class="input-group three-column">
-                 <div class="input-container">
-                     <label for="name">Your Name</label>
-                     <input type="text" name="name" id="name">
-                 </div>
-             </div>
-             <div class="input-group three-column">
-                <div class="input-container">
-                    <label for="name">Email</label>
-                    <input type="text" name="email" id="email">
+            <h1>Contact Me</h1><hr>
+            <form action="" method="post" id="contact-form">
+                <div class="input-group three-column">
+                    <div class="input-container">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
                 </div>
-            </div>
-            <div class="input-group three-column">
-                <div class="input-container">
-                    <label for="name">Subject</label>
-                    <input type="text" name="subject" id="subject">
+                <div class="input-group three-column">
+                    <div class="input-container">
+                        <label for="name">Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
                 </div>
-            </div>
-            <div class="input-group textarea">
-                <div class="input-container">
-                    <label for="name">Message</label>
-                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <div class="input-group three-column">
+                    <div class="input-container">
+                        <label for="name">Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
                 </div>
-                <input type="submit" name="send" class="btn-default btn-border" value="Send">
-            </div>
-         </form>
-     </section>
+                <div class="input-group textarea">
+                    <div class="input-container">
+                        <label for="name">Message</label>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" name="send" class="btn-default btn-border" value="Send">
+                </div>
+            </form>
+        </section>
 
     <!-- Footer Section -->
      <Footer>
-         <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook"></a>
-         <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram"></a>         
-         <p id="footie">MC &copy; 2018</p>
+         <div class="footer">
+             <h2>connect with us on</h2>
+            <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook fa-lg"></a>
+            <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram fa-lg"></a>         
+            <p id="footie"> &copy; 2018</p>
+         </div>
      </Footer>
     </div> <!-- wrapper ends-->
 
