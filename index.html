@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper" class="wrapper">
     <!-- Back to the top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -19,66 +19,95 @@
       <!-- Top Container -->
       <header class="head">
         <nav class="main-nav">
-          <div class="border container">
-            <h1 class="title"> Z's Sweets <br>
-                <span>we love to help you celebrate!</span>
-            </h1>
-            <!-- <h2 class="first">Baker | Designer | Perfectionist</h2> -->
-          </div>
-          <br>
-          <ul>
-              <li>
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#F4EEEE"
+                        stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#F4EEEE"
+                        stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#F4EEEE"
+                        stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+            <!-- Mobile side menu -->
+            <div id="side-menu" class="side-nav">
+                <span>
+                    <a href="#" onclick="closeSideMenu()" 
+                    class="btn-close">&times;</a>
+                </span>
                 <a href="#section1">About</a>
-              </li>
-              <li>
                 <a href="#section2">Sweets</a>
-              </li>
-              <li>
                 <a href="#section3">Gallery</a>
-              </li>
-              <li>
                 <a href="#section4">Raves</a>
-              </li>
-              <li>
                 <a href="#section5">Contact</a>
-              </li>
-           </ul>
+            </div>
+            <!-- <div id="header" class="border container"> -->
+                
+                <!-- <h2 class="first">Baker | Designer | Perfectionist</h2> -->
+            <!-- </div> -->
+            <br>
+            <ul>
+                <li>
+                    <a href="#section1">About</a>
+                </li>
+                <li>
+                    <a href="#section2">Sweets</a>
+                </li>
+                <li>
+                    <a href="#section3">Gallery</a>
+                </li>
+                <li>
+                    <a href="#section4">Raves</a>
+                </li>
+                <li>
+                    <a href="#section5">Contact</a>
+                </li>
+            </ul>
         </nav>    
       </header>
 
-      <!-- Slideshow container-->
-      <div class="slideshow-container slide">
+      <!-- Home hero -->
+      <section class="home-hero">
+          <div class="container">
+            <h1 class="title"> Z's Sweets <br>
+                <span>we love to help you celebrate!</span>
+            </h1>
+          </div>
+      </section>
 
+      <!-- Slideshow container-->
+      <!-- <div class="slideshow-container slide"> -->
         <!-- Full -width images with number and caption text -->
-        <div class="mySlides fade">
+        <!-- <div class="mySlides fade">
             <div class="numbertext"></div>
             <img class="img-slide"src="images/wedding-0.jpg" style="width: 750px"alt="wedding cake">
             <div class="text"></div>
-        </div>
-
-        <div class="mySlides fade">
+        </div> -->
+        <!-- <div class="mySlides fade">
             <div class="numbertext"></div>
             <img class="img-slide"src="images/wedding-1.jpg" style="width: 750px"alt="cake">
             <div class="text"></div>
-        </div>
-
-        <div class="mySlides fade">
+        </div> -->
+        <!-- <div class="mySlides fade">
             <div class="numbertext"></div>
             <img class="img-slide"src="images/wedding-4.jpg" style="width: 750px"alt="birthday cake">
             <div class="text"></div>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
     <!-- Info Section -->
     <a name="section1"></a>
     <section class="info">
         <h1>About Us<hr></h1> 
         <div class="about container">
-            <h2 >Locally Owned in the Ozarks!</h2>
+            <h3 >Locally Owned in the Ozarks!</h3>
             <p>It's not an event without a <em><strong>SWEET!</strong></em> We bake all our cakes
             to order so they are never frozen. Our frostings are made from scratch, whether you choose 
             traditional <em><strong>Buttercream</strong></em> or <em><strong>Italian Meringue,</strong></em> 
             it's sure be scrumptious.<br> We personialize your sweets with your concept and our attention to detail,
             while making sure a lot of love is mixed into it.</p>
+
             <p>We can deliver and setup your cake too!! That way, you can focus on the party</p>
         </div>
     </section>
@@ -251,7 +280,7 @@
     <!-- Footer Section -->
      <Footer>
          <div class="footer">
-             <h2>connect with us on</h2>
+             <h2>Connect With Us On</h2>
             <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook fa-lg"></a>
             <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram fa-lg"></a>         
             <p id="footie"> &copy; 2018</p>
