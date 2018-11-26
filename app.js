@@ -1,20 +1,3 @@
-// Slide show
-// var slideIndex = 0;
-// showSlides();
-
-
-// function showSlides () {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++
-//     if (slideIndex > slides.length) {slideIndex = 1}
-//     slides[slideIndex-1].style.display = "block";
-//     setTimeout(showSlides, 3000); // Change image every 3 seconds 
-// }
-
 // To the top button
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -37,10 +20,33 @@ function topFunction() {
 
 function openSlideMenu() {
     document.getElementById('side-menu').style.width = '45vw';
-    // document.getElementById('header').style.marginLeft = '25vw';
 }
 
 function closeSideMenu() {
     document.getElementById('side-menu').style.width = '0';
-    document.getElementById('header').style.marginLeft = '0';
 }
+
+const sides = document.querySelectorAll('a#side');
+
+[].forEach.call(sides, function(side) {
+    side.addEventListener('click', closeSideMenu);
+})
+
+// Render images 
+
+const photos = ["images/birthdaycake.png", "images/corsetcookie-2.jpg", "images/corsetcookies-1.jpg", "images/corsetcookies.jpg",
+"images/ramencake.jpg", "images/starwars.png", "images/toolbox.jpg", "images/wedding-0.jpg", "images/wedding-1.jpg", "images/wedding-4.jpg",
+"images/weddingcake-2.jpg", "images/kc.JPG"]
+
+function renderImg() {
+    let images = document.getElementById('img-container');
+    
+    for ( i = 0; i < photos.length; i++ ) {
+        let img = document.createElement('img');
+        img.className = 'pic';
+        img.src = `${photos[i]}`;
+        img.alt = 'cake';
+        images.appendChild(img);
+    }
+}
+renderImg();

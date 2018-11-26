@@ -8,17 +8,7 @@ body {
     text-align: center;
 }
 
-.img-slide {
-    max-width: 100vw;
-    height: 65vh;
-}
-
-img {
-    max-width: 100;
-    height: auto;
-}
-
-.container {
+.container-a {
     width: 95%;
     margin: 0 auto;
 }
@@ -67,9 +57,6 @@ nav ul, ul {
 }
 
 nav li {
-    /* display: inline-block; 
-    margin-bottom: 2.5em;
-    margin: .35em; */
     display: none;
 }
 
@@ -80,7 +67,6 @@ nav a {
     font-size: .9rem;
     padding: .25em;
     color: #FFF;
-    /* margin-top: 1.5em; */
 }
 
 nav a:hover,
@@ -103,12 +89,12 @@ nav a:focus {
     }
 
     .home-hero {
-    background-image: url(images/celebrate-photo.jpeg);
-    padding: 15rem 0;
-    height: 100vh;
-    color: #F4EEEE;
-    background-size: cover;
-    background-position: center;
+        background-image: url(images/celebrate-photo.jpeg);
+        padding: 2rem 0;
+        height: 100vh;
+        color: #F4EEEE;
+        background-size: cover;
+        background-position: center;
     }
 }
 
@@ -128,7 +114,7 @@ nav a:focus {
 }
 
 .side-nav a{
-    padding: 1.75em 1.35em 1.35em 1.5em;
+    padding: 1.25em 1.35em;
     font-size: 1.1rem;
     display: block;
     transition: 0.3s;
@@ -147,24 +133,25 @@ nav a:focus {
     top: 0;
     right: 0;
     font-size: 2rem;
-    /* margin-left: 1.5em; */
+}
+
+.btn-close {
+    padding: 2em;
+    width: 2em
 }
 
 /* About Us */
 
 .info {
-    /* border: 2px dotted red; */
     background-color: #ffe6ff;
     padding: 1.6em;
-    margin-top: -.3em
+    margin-top: -.3em;
+    font-size: 1.25rem;
 }
 
 .about {
-    /* border: 2px dotted red; */
-    /* background-color: #f2f2f2; */
     padding: 1em;
     font-size: 1.55rem;
-    /* text-align: justify; */
     line-height: 1.6;
 }
 
@@ -184,7 +171,6 @@ nav a:focus {
 }
 
 .box {
-    padding: 1.1em;
     text-align: left;
     background-color: whitesmoke;
     padding: 1.25em;
@@ -236,24 +222,70 @@ nav a:focus {
 
 .gallery {
     background-color: whitesmoke;
-    padding: 1.25em;
+    padding: 1.2em;
     font-size: 1.25rem;
 }
+
+.gallery img {
+    width: 90%;
+    align-items: space-around;
+    padding: 1em .75em;
+}
+
+@media (min-width: 60rem) {
+   .flex-container {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flex-container img {
+       display: grid;
+       grid-gap: 15px;
+       grid-template-columns: repeat(3, 1fr);
+       min-width: 100%;
+    }
+
+    .pic {
+        height: 20em;
+        width: 15em;
+    }
+}
+
 
 /* Reviews */
 
 .reviews {
     background-color: #ffe6ff;
-    padding: 1.25em;
+    padding: 1em;
     font-size: 1.25rem;
+    line-height: 1.6;
 }
 
 .box-a {
-    /* border: 1px solid; */
-    outline-style: double;
     padding: .35em;
     margin: .4em;
     text-align: center;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 50rem) {
+    .container {
+        padding: 5em 10em ;
+    }
+    .box-a {
+        padding: 1.25em;
+        font-size: 1.75rem;
+    }
 }
 
 /* Contact */
@@ -270,6 +302,7 @@ input[type=text], textarea {
     box-sizing: border-box;
     resize: vertical;
     margin: .25em;
+    font-size: 1rem
 }
 
 input[type=submit] {
@@ -280,6 +313,29 @@ input[type=submit] {
     display: inline-block;
     cursor: pointer;
     margin: 1.25em;
+}
+
+.three-column input {
+    text-align: center;
+}
+
+@media (min-width: 55rem) {
+    .flex-contact{
+        padding: 2.5em 20em;
+    }
+
+    .three-column input{
+        height: 1.75em;
+        padding: 1.25em;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        height: 4em;
+        width: 20vw;
+        font-size: 1.15rem;
+    }
 }
 
 /* Footer */
