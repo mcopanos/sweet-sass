@@ -34,26 +34,26 @@
             </span>
 
             <!-- Mobile side menu -->
-            <div id="side-menu" class="side-nav">
+            <div tabindex="0" id="side-menu" class="side-nav">
                 <span>
                     <a href="#" onclick="closeSideMenu()" 
                     class="btn-close"><i class="fa fa-times fa-lg"></i></a>
                 </span>
-                <a id="side" href="#section1">About</a>
-                <a id="side" href="#section2">Sweets</a>
-                <a id="side" href="#section3">Gallery</a>
-                <a id="side" href="#section4">Raves</a>
-                <a id="side" href="#section5">Contact</a>
+                <a class="side" href="#about">About</a>
+                <a class="side" href="#sweets">Sweets</a>
+                <a class="side" href="#gallery">Gallery</a>
+                <a class="side" href="#raves">Raves</a>
+                <a class="side" href="#contact">Contact</a>
             </div>
 
             <!-- Desktop view -->
             <br>
             <ul>
-                <li><a href="#section1">About</a></li>
-                <li><a href="#section2">Sweets</a></li>
-                <li><a href="#section3">Gallery</a></li>
-                <li><a href="#section4">Raves</a></li>
-                <li><a href="#section5">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sweets">Sweets</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#raves">Raves</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>    
       </header>
@@ -160,7 +160,7 @@
         </section>
 
     <!-- Reviews Section -->
-    <a name="reviews"></a>
+    <a name="raves"></a>
     <section class="reviews">
         <h1>Client Raves</h1><hr>
         <div class="container">
@@ -168,18 +168,21 @@
                 <h3>"Best Tasting Cake"</h3>
                 <p>"...everyone at the bridal shower loved it, we got 
                     cinnamon swril and it was the best tasting cake that I 
-                    have ever ordered..."
+                    have ever ordered..."<br>
                     - Camille S.
                 </p>
             </div>
             <div class="box-a">
                 <h3>"Huge Hit"</h3>
-                <p>"...it turned out exactly as I asked and was a huge hit at my wedding...
-                    - Brittany G."</p>
+                <p>"...it turned out exactly as I asked and was a huge hit at my wedding..."<br>
+                    - Brittany G.
+                </p>
             </div>
             <div class="box-a">
                 <h3>"Homemade"</h3>
-                <p>"...it was all amazing and good homemade... - Vanessa C."</p>
+                <p>"...it was all amazing and good homemade..."<br>
+                     - Vanessa C.
+                </p>
             </div>
             <div class="box-a">
                 <h3>Five Stars</h3>
@@ -188,17 +191,33 @@
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
+                <br>
                 <p>- Nancy C.</p>
             </div>
             <div class="box-a">
                 <h3>"Everyone Loved"</h3>
-                <p>"...everyone loved the cake! It came out just like I asked it to be... 
-                    - Carolyn S."</p>
+                <p>"...Everyone loved the cake! It came out just like I asked it to be..."<br>
+                    - Carolyn S.
+                </p>
             </div>
             <div class="box-a">
                 <h3>"Beautiful Job"</h3>
-                <p>"...Cindy does a beautiful job on her cakes and cupcakes...
-                    - Connie H."</p>
+                <p>"...Cindy does a beautiful job on her cakes and cupcakes..."<br>
+                    - Connie H.
+                </p>
+            </div>
+            <div class="box-a">
+                <h3>"He was speechless"</h3>
+                <p>"...Response was very quick and professional. My son was speachless, 
+                    we will definitely be using her again ..."<br>
+                    - Jalean C.
+                </p>
+            </div>
+            <div class="box-a">
+                    <h3>"Highly recommend"</h3>
+                    <p>"Great work! I love the cake we had made for our anniversary ..."<br>
+                    - William R.
+                </p>
             </div>
         </div>
     </section>
@@ -242,10 +261,12 @@
     <!-- Footer Section -->
      <Footer>
          <div class="footer">
-             <h2>Connect With Us On</h2>
-            <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook fa-lg"></a>
-            <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram fa-lg"></a>         
-            <p id="footie"> &copy; 2018</p>
+            <h2>Connect With Us On</h2>
+            <div tabindex="0">
+                <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook fa-lg"></a>
+                <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram fa-lg"></a>         
+            </div>
+            <p id="footie">&copy; 2018 Z's Sweets</p>
          </div>
      </Footer>
     </div> <!-- wrapper ends-->

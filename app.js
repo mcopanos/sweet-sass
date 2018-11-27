@@ -26,7 +26,7 @@ function closeSideMenu() {
     document.getElementById('side-menu').style.width = '0';
 }
 
-const sides = document.querySelectorAll('a#side');
+const sides = document.querySelectorAll('a.side');
 
 [].forEach.call(sides, function(side) {
     side.addEventListener('click', closeSideMenu);

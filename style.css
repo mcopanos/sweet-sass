@@ -43,7 +43,7 @@ header {
 
 .home-hero {
     background-image: url(images/celebrate-photo.jpeg);
-    padding: 1.5em 0;
+    padding: 1em 0;
     height: 100vh;
     color: #F4EEEE;
     background-size: cover;
@@ -90,11 +90,12 @@ nav a:focus {
 
     .home-hero {
         background-image: url(images/celebrate-photo.jpeg);
-        padding: 2rem 0;
+        /* padding: 2rem 0; */
         height: 100vh;
         color: #F4EEEE;
         background-size: cover;
         background-position: center;
+        font-weight: 900;
     }
 }
 
