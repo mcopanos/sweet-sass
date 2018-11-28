@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -73,7 +73,7 @@ nav a:hover,
 nav a:focus {
     color: #DDD;
 }
-
+/* Break point at 800px */
 @media (min-width: 50rem) {
     nav li {
         display: inline-block; 
@@ -90,7 +90,7 @@ nav a:focus {
 
     .home-hero {
         background-image: url(images/celebrate-photo.jpeg);
-        /* padding: 2rem 0; */
+        /* padding: .2rem 0; */
         height: 100vh;
         color: #F4EEEE;
         background-size: cover;
@@ -112,6 +112,7 @@ nav a:focus {
     overflow-x: hidden;
     transition: 0.5s;
     opacity: 0.9;
+    
 }
 
 .side-nav a{
@@ -174,13 +175,13 @@ nav a:focus {
 .box {
     text-align: left;
     background-color: whitesmoke;
-    padding: 1.25em;
+    padding: 1.5em;
 }
 
 .box-inside {
     text-align: right;
     background-color: #ffe6ff;
-    padding: 1.25em;
+    padding: 1.5em;
 }
 
 .padding {
@@ -190,19 +191,20 @@ nav a:focus {
 
 .sweets {
     background-color: #ffe6ff;
-    padding: 1.25em;
+    padding: 3.5em 1.25em;
     font-size: 1.5rem;
     line-height: 1.2;
 }
 
+/* Break point at 800px */
 @media (min-width: 50rem) {
     .box {
-        padding: 1.5em 5em;
+        padding: 1.5em 3em;
         font-size: 1.75rem;
     }
 
     .box-inside {
-        padding: 1.5em 5em;
+        padding: 1.5em 3em;
         font-size: 1.75rem;
     }
 }
@@ -228,22 +230,23 @@ nav a:focus {
 }
 
 .gallery img {
-    width: 90%;
+    width: 80%;
     align-items: space-around;
     padding: 1em .75em;
 }
 
-@media (min-width: 60rem) {
+/* Break point at 800px */
+@media (min-width: 50rem) {
    .flex-container {
         display: grid;
         grid-gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .flex-container img {
        display: grid;
        grid-gap: 15px;
-       grid-template-columns: repeat(3, 1fr);
+       grid-template-columns: repeat(2, 1fr);
        min-width: 100%;
     }
 
@@ -253,12 +256,33 @@ nav a:focus {
     }
 }
 
+/* Break point at  1040px */
+@media (min-width: 65rem) {
+    .flex-container {
+         display: grid;
+         grid-gap: 30px;
+         grid-template-columns: repeat(3, 1fr);
+     }
+ 
+     .flex-container img {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 100%;
+     }
+ 
+     .pic {
+         height: 20em;
+         width: 15em;
+     }
+ }
+
 
 /* Reviews */
 
 .reviews {
     background-color: #ffe6ff;
-    padding: 1em;
+    padding: 1.5em;
     font-size: 1.25rem;
     line-height: 1.6;
 }
@@ -268,6 +292,8 @@ nav a:focus {
     margin: .4em;
     text-align: center;
     background-color: whitesmoke;
+    box-shadow: 0 0 7px #d673d6;
+    border-radius: .5em;
 }
 
 .container {
@@ -279,9 +305,21 @@ nav a:focus {
     justify-content: space-evenly;
 }
 
+/* Break point at 800px */
 @media (min-width: 50rem) {
     .container {
-        padding: 5em 10em ;
+        padding: 1em;
+    }
+    .box-a {
+        padding: .5em 1em;
+        font-size: 1.75rem;
+    }
+}
+
+/* Break point at 1280px */
+@media (min-width: 80rem) {
+    .container {
+        padding: 5em 15em ;
     }
     .box-a {
         padding: 1.25em;
@@ -293,7 +331,7 @@ nav a:focus {
 
 .contact {
     background-color: whitesmoke;
-    padding: 1.25em;
+    padding: 1.25em 1.75em;
     font-size: 1.25rem;
 }
 
@@ -320,9 +358,31 @@ input[type=submit] {
     text-align: center;
 }
 
-@media (min-width: 55rem) {
-    .flex-contact{
-        padding: 2.5em 20em;
+/* Break Point at 800px */
+@media (min-width: 50rem) {
+    .contact{
+        padding: 2.5em 4.5em;
+    }
+
+    .three-column input{
+        height: 1.75em;
+        padding: 1.25em;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        height: 3em;
+        width: 20vw;
+        font-size: 1.15rem;
+        padding: .2em;
+    }
+}
+
+/* Break point at 1200px */
+@media (min-width: 75rem) {
+    .contact{
+        padding: 2.5em 15em;
     }
 
     .three-column input{
@@ -370,8 +430,8 @@ input[type=submit] {
     outline: none;
     background-color: #d673d6;
     cursor: pointer;
-    padding: .75em;
+    padding: .75em 1em;
     border-radius: 50%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0.75;
 }

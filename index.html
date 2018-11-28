@@ -21,14 +21,15 @@
 <body>
     <div id="wrapper" class="wrapper">
     <!-- Back to the top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
     <!-- Navigation -->
       <!-- Top Container -->
       <header class="head">
         <nav class="main-nav">
             <span class="open-slide">
-                <a href="#" onclick="openSlideMenu()">
+                <a href="#" aria-label="Open side menu button" onclick="openSlideMenu()">
                     <svg width="30" height="30">
                         <path d="M0,5 30,5" stroke="#F4EEEE"
                         stroke-width="5" />
@@ -43,7 +44,7 @@
             <!-- Mobile side menu -->
             <div tabindex="0" id="side-menu" class="side-nav">
                 <span>
-                    <a href="#" onclick="closeSideMenu()" 
+                    <a href="#" aria-label="Close side menu button" onclick="closeSideMenu()" 
                     class="btn-close"><i class="fa fa-times fa-lg"></i></a>
                 </span>
                 <a class="side" href="#about">About</a>
@@ -237,29 +238,29 @@
                 <form name="contact" method="post" id="contact-form" netlify-honeypot="bot-field" netlify>
                     <div class="input-group three-column">
                         <div class="input-container">
-                            <label for="name">Your Name</label>
-                            <input type="text" name="name" id="name">
+                            <label for="your-name">Your Name</label>
+                            <input aria-label="your-name" type="text" name="your_name" id="your_name">
                         </div>
                     </div>
                     <div class="input-group three-column">
                         <div class="input-container">
-                            <label for="name">Email</label>
-                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                            <input aria-label="email" type="text" name="email" id="email">
                         </div>
                     </div>
                     <div class="input-group three-column">
                         <div class="input-container">
-                            <label for="name">Subject</label>
-                            <input type="text" name="subject" id="subject">
+                            <label for="subject">Subject</label>
+                            <input aria-label="subject" type="text" name="subject" id="subject">
                         </div>
                     </div>
                     <div class="input-group textarea">
                         <div class="input-container">
-                            <label for="name">Message</label>
-                            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                            <label for="message">Message</label>
+                            <textarea aria-label="message" name="message" id="message" cols="30" rows="10"></textarea>
                         </div>
                         <div data-netlify-recaptcha></div>
-                        <input type="submit" name="send" class="btn-default btn-border" value="Send">
+                        <input aria-label="send-button" type="submit" name="send-button" class="btn-default btn-border" value="Send">
                     </div>
                 </form>
             </div>
@@ -270,8 +271,8 @@
          <div class="footer">
             <h2>Connect With Us On</h2>
             <div tabindex="0">
-                <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" class="fa fa-facebook fa-lg"></a>
-                <a target="blank" href="https://www.instagram.com/zs.sweets/" class="fa fa-instagram fa-lg"></a>         
+                <a target="blank" href="https://www.facebook.com/Zs-Sweets-995362927312585/" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="blank" href="https://www.instagram.com/zs.sweets/" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>         
             </div>
             <p id="footie">&copy; 2018 Z's Sweets</p>
          </div>
