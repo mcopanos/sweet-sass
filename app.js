@@ -34,9 +34,14 @@ const sides = document.querySelectorAll('a.side');
 
 // Render images 
 
-const photos = ["images/birthdaycake.png", "images/corsetcookie-2.jpg", "images/corsetcookies-1.jpg", "images/corsetcookies.jpg",
-"images/ramencake.jpg", "images/starwars.png", "images/toolbox.jpg", "images/wedding-0.jpg", "images/wedding-1.jpg", "images/wedding-4.jpg",
-"images/weddingcake-2.jpg", "images/kc.JPG"]
+// const photos = ["images/birthdaycake.png", "images/corsetcookie-2.jpg", "images/corsetcookies-1.jpg", "images/corsetcookies.jpg",
+// "images/ramencake.jpg", "images/starwars.png", "images/toolbox.jpg", "images/wedding-0.jpg", "images/wedding-1.jpg", "images/wedding-4.jpg",
+// "images/weddingcake-2.jpg", "images/kc.JPG"]
+
+const photos = ["image/IMG_3165.jpg", "image/IMG_3008.JPG", "image/IMG_3007.JPG", "image/wedding-0.jpg",
+"image/wedding-1.jpg", "image/wedding-4.jpg", "image/weddingcake-2.jpg",
+"image/IMG_2524 2.JPG", "image/IMG_2359 2.jpg", "image/IMG_2339 2.jpg", "image/toolbox.jpg",
+"image/IMG_2129.jpg", "image/IMG_2128.jpg", "image/IMG_1851.jpg"]
 
 function renderImg() {
     let images = document.getElementById('img-container');

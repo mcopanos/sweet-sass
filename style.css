@@ -42,7 +42,7 @@ header {
 }
 
 .home-hero {
-    background-image: url(images/celebrate-photo.jpeg);
+    background-image: url(image/celebrate-photo.jpeg);
     padding: 1em 0;
     height: 100vh;
     color: #F4EEEE;
@@ -89,7 +89,7 @@ nav a:focus {
     }
 
     .home-hero {
-        background-image: url(images/celebrate-photo.jpeg);
+        background-image: url(image/celebrate-photo.jpeg);
         /* padding: .2rem 0; */
         height: 100vh;
         color: #F4EEEE;
@@ -211,12 +211,12 @@ nav a:focus {
 
 @media (min-width: 80rem) {
     .box {
-        padding: 1.5em 13em;
+        padding: 1.5em 5em;
         font-size: 1.75rem;
     }
 
     .box-inside {
-        padding: 1.5em 13em;
+        padding: 1.5em 5em;
         font-size: 1.75rem;
     }
 }
@@ -247,7 +247,7 @@ nav a:focus {
        display: grid;
        grid-gap: 15px;
        grid-template-columns: repeat(2, 1fr);
-       min-width: 100%;
+       min-width: 90%;
     }
 
     .pic {
@@ -268,12 +268,13 @@ nav a:focus {
         display: grid;
         grid-gap: 15px;
         grid-template-columns: repeat(3, 1fr);
-        min-width: 100%;
+        min-width: 90%;
      }
  
      .pic {
-         height: 20em;
-         width: 15em;
+         height: 25em;
+         width: 10em;
+         /* padding: 1.25em; */
      }
  }
 
